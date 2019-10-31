@@ -144,7 +144,7 @@ mexFunction(
         mexErrMsgTxt("Inconsistent number of vertices!");
     if (mxGetN(prhs[0]) != mxGetN(prhs[5]))
         mexErrMsgTxt("Numof points and number of seedVertices should be the same!");
-    if (mxGetN(prhs[6]) != numOfVertices) mxErrMsgTxt("Data not the right size!");
+    if (mxGetN(prhs[6]) != numOfVertices) mexErrMsgTxt("Data not the right size!");
     
     /*
      *
